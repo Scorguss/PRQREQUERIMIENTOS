@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="PRYREQ.Views.BlankPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PRYREQ.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Margin="20">
+        <!-- Título -->
+        <StackPanel VerticalAlignment="Top" Margin="0,20,0,0">
+            <TextBlock Text="REGISTER USER" HorizontalAlignment="Center" FontSize="24" FontWeight="Bold"/>
+        </StackPanel>
+
+        <!-- Formulario de entrada -->
+        <StackPanel VerticalAlignment="Center" Margin="0,40,0,80">
+            <TextBox PlaceholderText="Nombre del Paciente" Margin="0,10" Height="35" FontSize="14"/>
+            <TextBox PlaceholderText="Edad del Paciente" Margin="0,10" Height="35" FontSize="14"/>
+            <TextBox PlaceholderText="Dirección del Paciente" Margin="0,10" Height="35" FontSize="14"/>
+
+            <!-- Selector (Ejemplo con RadioButton) -->
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="0,20,0,0">
+                <RadioButton Content="Deportiva" GroupName="ModeGroup" Margin="5" FontSize="14"/>
+                <RadioButton Content="Pediatría" GroupName="ModeGroup" Margin="5" FontSize="14"/>
+                <RadioButton Content="Administrador" GroupName="ModeGroup" Margin="5" FontSize="14"/>
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Botones inferiores -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,20,0,0">
+            <Button Content="ATRAS" Width="100" Height="40" Margin="10"/>
+            <Button Content="LIMPIAR" Width="100" Height="40" Margin="10"/>
+            <Button Content="GUARDAR" Width="100" Height="40" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Page>
+
+
